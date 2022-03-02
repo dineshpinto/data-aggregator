@@ -20,3 +20,7 @@ Here the logic is used by executing the binary file and analyzing its input.
 ## Further improvements
 - Compile Numba against the Intel SVML libraries for further performance enhancement (currently not possible on M1 arch)
 - Added parallel processing in Numba for processing distinct arrays concurrently (should be relatively trivial, but may require dropping down to `ctypes` arrays to ensure processes can write concurrently)
+
+
+## Notes
+The conda env contains a lot of additional libraries for visualization, notebooks etc. The logic itself only requires a minimal subset of those libraries (namely `numpy` and `numba`).
